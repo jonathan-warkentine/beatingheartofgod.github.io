@@ -1,0 +1,23 @@
+/* setting up some page site defaults */
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 5px;
+}
+
+#title-box{
+    display: flex;
+    justify-content: center;
+    
+}   
+
+h1{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.1%;
+    position: fixed;
+    background-color: white;
+}
+
+.card{
+    width: 75%;
+}
