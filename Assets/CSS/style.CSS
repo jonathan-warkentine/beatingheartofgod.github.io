@@ -1,59 +1,57 @@
 /* setting up some page site defaults */
 * {
     font-family: Arial, Helvetica, sans-serif;
-}
-
-#title-box{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding: 0;
-
-    /* trying to get the page title to "stick" */
-    position: sticky;
-    top: 1px;
-    
-    
-
-    /* border attributes */
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-radius: 0 5px;
-}   
-
-h1{
-    text-align: center;
-    border: 1px solid red;
-    font-family: 'Courier New', Courier, monospace;
-
-}
-
-#navbar{
-    position: sticky;
-    top: 1px;
-    background-color: #333333;
-    border-radius: 5px;
-    z-index: 1;
-}
-
-#navbar-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
+}
+
+
+h1 {
+    position: sticky;
+    top: 0; 
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    color: black;
+    font-size: 75px;
+    text-align: center;
+}
+
+
+
+nav{
+    position: sticky;
+    top: 0;
+    flex-flow: column wrap;
+}
+
+nav div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: darkslategrey;
+    color: white;
+    font-size: medium;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+nav a {
     color: white;
     padding: 5px;
     text-decoration: none;
-    font-size: small;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+nav a:hover {
+    background-color: #111111;
+    border-radius: 3px;
+  }
+
 #content{
-    position: relative;
-    top: 75px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
     width: 75%;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -80,12 +78,12 @@ p {
     top: 0;
 } */
 
-li a {
-    color: white;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-li a:hover {
-    background-color: #111111;
-  }
+
+
+ 
+
+  /* one solution to spacing elements out on the page
+  section + section{
+      margin-top: 5px;
+  } */
