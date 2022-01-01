@@ -1,4 +1,6 @@
 /* setting up some page site defaults */
+
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -30,8 +32,7 @@ nav div{
     background-color: darkslategrey;
     color: white;
     font-size: medium;
-    border-bottom-left-radius: 1px;
-    border-bottom-right-radius: 1px;
+    border-radius: 2px;
 }
 
 nav a {
@@ -47,12 +48,10 @@ nav a:hover {
   }
 
 #content{
-    margin-top: 1%;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 25px;
-    width: 75%;
     font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -64,11 +63,13 @@ p {
 }
 
 .content-card{
-    
+    margin-top: 2%;
     justify-items: center;
     border: 1px solid black;
     border-radius: 3px;
     padding: 15px;
+    width: 75%;
+
 }
 
 /* creating a class to apply to sticky elements */
